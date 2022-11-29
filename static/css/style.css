@@ -9,3 +9,12 @@
     color: white;
 }
 
+.container-bg {
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/19/12/38/industry-1752876_1280.png);
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(245, 245, 245, 0.9);
+    border-radius: 10px;
+}
