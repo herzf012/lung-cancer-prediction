@@ -17,15 +17,19 @@
     height: 200px;
     width: auto;
     display: block;
-    margin-left: auto;
+    margin-left: 25%;
     margin-right: auto;
     
 }
 
 .contributer-name {
-    text-align: center;
+    margin-left: 25%;
 }
 
 .contributer-email {
-    text-align: center;
+    margin-left: 25%;
+}
+
+.contributer-linkedin {
+    margin-left: 25%;
 }
