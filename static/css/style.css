@@ -18,3 +18,20 @@
     background-color: rgba(245, 245, 245, 0.9);
     border-radius: 10px;
 }
+
+.img-thumbnail {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.contributer-name {
+    text-align: center;
+}
+
+.contributer-email {
+    text-align: center;
+}
