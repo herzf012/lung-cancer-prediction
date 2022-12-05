@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-primary">
+  <nav class="navbar navbar-expand-sm bg-primary">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -40,7 +40,7 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-4">Methodology</h1>
-          <p class="lead">K-Nearest Neighbors, Support Vector Machine, and the Random Forest Classifier.</p>
+          <p class="lead">K-Nearest Neighbors, Support Vector Machine, Random Forest Classifier, and Neural Network.</p>
       </div>
     </div>
 
@@ -66,7 +66,12 @@
       <div class="suppor-vector-machine">
         <h1 class="display-6">Support Vector Machine</h1>
         <p>
-          Here is where we put all the information about Support Vector Machine stuff.
+          SVM is being used in this instance to find if there are any correlations within specific set of categories.
+          The data was gathered over the course of an average of 7 years, in a study provided by Journal of Nature Medicine.
+
+          To prepare the data set for predictions Patient ID and Index were dropped as they are not useful within the data.
+          The specific categories chosen were "Wheezing" and "Coughing of Blood", these were chosen due to the number of patients with these symptoms.
+          Once prepared the data was then put on a plot and using sklearn trained and scaled for predicting.
         </p>
       </div>
     </div>
@@ -79,11 +84,34 @@
         </p>
       </div>
     </div>
+
+    <div class="container">
+      <div class="neural-network">
+        <h1 class="display-6">Neural Network</h1>
+        <p>
+          To prepare our data for our Neural Network, we used pandas to drop our "index" and
+          "Patient Id" column from our dataset since they don't contribute in predicting lung
+          cancer risk and they would only be noise in our model. We then changed "Low", "Medium",
+          and "High" values in our target "Level" column to 0, 1, and 2 respectively so that our
+          model could understand these values. After that we split our data and target, create
+          dummies for our target, and then use scikit-learn to scale our data.
+        </p>
+        <p>
+          After the preprocessing is done, we move on to create or Neural Network using TensorFlow
+          Keras. In the following order, our Neural Network consists of an input layer, an 8 node
+          hidden layer with a ReLU activation function, a 16 node hidden layer with a ReLU
+          activation function, a dropout layer with a rate of 0.1, another 8 node hidden layer
+          with a ReLU activation function, and a 3 node output layer with a softmax activation
+          function. When we compiled our model, we chose our optimizer to be adam, loss to be
+          categorical crossentropy, and metrics to be accuracy. To fit our model we chose 40
+          epochs and a validation split of 0.3.
+        </p>
+      </div>
+    </div>
   </div>
 
   <!-- Import the Bootstrap JavaScript code -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
 
 </body>
 

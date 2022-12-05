@@ -1,20 +1,39 @@
-#smoking_image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 .nav-link {
     color: white;
 }
 
 .container-bg {
+    /* position: absolute; */
     background-image: url(https://cdn.pixabay.com/photo/2016/10/19/12/38/industry-1752876_1280.png);
     background-size: cover;
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+    min-height: 875px;
 }
 
 .container {
-    background-color: rgba(245, 245, 245, 0.9);
+    background-color: rgba(245, 245, 245, 0.65);
     border-radius: 10px;
+}
+
+.img-thumbnail {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.contributer-name {
+    margin-left: 25%;
+}
+
+.contributer-email {
+    margin-left: 25%;
+}
+
+.contributer-linkedin {
+    margin-left: 25%;
 }
