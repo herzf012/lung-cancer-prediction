@@ -68,21 +68,15 @@ ____________________________________________________
 
 
 ## HTML to GitHub
- 1. Host on GitHub:
+ 1. Host on GitHub: "LInk paste here"
 
  2. HTML Files
-        a. Home Page (with drop down boxes)
-        b. Methodology Page (Showcase each model
-        c. Analysis (on our research findings)  
+        a. Home Page (/templates/index.html)
+        b. Methodology page (/templates/methodology.html)
+        c. Analysis page (/templates/analysis.html)  
+        d. Conclusion page (/templates/conclusion.html)
 
  3.  CSS Files (Cascading Style Sheets)
+        a. /static/css/style.css
 
- 4.
-
- 5.  
-
- 6.
- 7. 
-
-## Conclusion 
 
