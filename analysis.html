@@ -53,15 +53,17 @@
                 <div class="images">
                     <div class="photo">
                         <img src="images/combined graph.png" alt="Coughing of Blood and Wheezing">
+                    </div>
                 </div>
 
                 Accuracy for SVM is dependent on the sample size given and would not be able to account for all other features.
                 An example would be checking dry cough and fatigue. While there were a lot of patients in this scenario that were at low or medium
-                 risk of lung cancer, it does not take into account for other conditions; such as a patient being a big drinker 
-                 or the living conditions they were in having a high amount of pollution.
+                risk of lung cancer, it does not take into account for other conditions; such as a patient being a big drinker 
+                or the living conditions they were in having a high amount of pollution.
                 <div class="images">
-                    </div class="photo">
+                    <div class="photo">
                         <img src="images/Fatigue_DryCough.png" alt="Fatigue and Dry Cough">
+                    </div>
                 </div>
                 </p>
                 <br>
@@ -83,33 +85,44 @@
                 <p>
                 As one reviews the various correlations, any pair of features that exceed 0.90 indicate a strong correlation. 
                 Additionally, one can review the boxplots of the features and see similar results.
-                Genetic risk and chronic lung disase are strong inicators. Whereas snoring and gender are not.<br><br>
+                Genetic risk and chronic lung disase are strong inicators. Whereas snoring and gender are not.
+                <br>
+                <br>
                 </p>
             </div>
         </div>
       
         <div class="container">
             <div class="neural-network">
-                <h1 class="display-6">Supervised Learning - Scenario 2</h1><br>
-                <img src="images/training_vs_validation.png" <br>
-                <img src="images/accuracy.png"<br><br>
-                <br><p>
+                <h1 class="display-6">Supervised Learning - Scenario 2</h1>
+                <br>
+                <img src="images/training_vs_validation.png">
+                <br>
+                <img src="images/accuracy.png">
+                <br>
+                <br>
+                <br>
+                <p>
                 In both scenarios, we used the relu/relu/softmax activation methods. While both NN generated similar results, 
                 scenario 1 achieved the desired accuracy level using only 10 epochs. 
                 </p>
             </div>
-            <div class="container">
-                <div class="unsupervised-learning">
-                    <h1 class="display-6">Unsupervised Learning</h1><br>
-                    <img src="images/dendogram.png"/><br>
-                    <img src="images/two_feature_scatterplot.png" alt="Coughing of Blood/Shortness of Breath"/>
-                    <img src="images/ann.png" alt="NN Diagram"/>
+        </div>
 
-                    <br><p>
-                    In both scenarios, we used the relu/relu/softmax activation methods. While both NN generated similar results, 
-                    scenario 1 achieved the desired accuracy level using only 10 epochs.
-                    </p>
-                </div>
+        <div class="container">
+            <div class="unsupervised-learning">
+                <h1 class="display-6">Unsupervised Learning</h1>
+                <br>
+                <img src="images/dendogram.png"/>
+                <br>
+                <img src="images/two_feature_scatterplot.png" alt="Coughing of Blood/Shortness of Breath"/>
+                <img src="images/ann.png" alt="NN Diagram"/>
+                <br>
+                <p>
+                In both scenarios, we used the relu/relu/softmax activation methods. While both NN generated similar results, 
+                scenario 1 achieved the desired accuracy level using only 10 epochs.
+                </p>
+            </div>
         </div>
     </div>
 
