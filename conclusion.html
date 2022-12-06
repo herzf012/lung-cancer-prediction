@@ -40,18 +40,36 @@
         <div class="container">
             <div class="jumbotron">
                 <h1 class="display-4">Conclusion</h1>
-                <p class="lead">K-Nearest Neighbors, Support Vector Machine, Random Forest Classifier, and Neural Network.</p>
+                <p class="lead"> Our objective was to evaluate whether or not the dataset we chose, and the concommitant features, 
+                    were good predictors of lung cancer.<br><br>
+
+                    The results of KNN, SVM, ROC, and RFF all provided strong support for identifying the most relevant features for assessing the likelihood 
+                    of lung cancer. Particularly telling, was the RFF which surprisingly identified wheezing as the dominant feature. We initially thought that other 
+                    features, such as couging of blood or smoking, might have been the dominant one(s).<br><br>
+
+                    KNN/ROC peaked at 100% and didn't start to tail off until k reached 13 and higher. Interestingly, the ROC-AUC score was 97%.<br><br>
+                    Depending on the feature input, SVM produced similar results; a high correlation -- greater than 90% -- for one feature vs another. The examples we
+                    used were dry cough and fatigue.<br><br>
+                    The RFF produced results that one might normally expect: coughing of blood, wheezing, smoking, and passive smoking.
+                    The training and test scores were similar: 91%/90% respectively.<br><br>
+                    The neural network performed well. In one scenario, the network only needed 40 epochs to reach 97%. <br><br>
+                    We also created an unsupervised model using agglomerative clustering. The training vs validation loss and the training vs accuracy graphs both show
+                    similar trends. Both trended towards 100% while plateauing around 20 epochs.<br><br>
+
+
+
+                    <!-- K-Nearest Neighbors, Support Vector Machine, Random Forest Classifier, and Neural Network.</p> -->
             </div>
         </div>
   
-        <div class="container">
+        <!-- <div class="container">
             <div class="about">
                 <h1 class="display-6">About</h1>
                 <p>
                 This is the about paragraph.
                 </p>
             </div>
-        </div>
+        </div> -->
     </div>
 
   <!-- Import the Bootstrap JavaScript code -->
