@@ -56,8 +56,14 @@
     <div class="container">
       <div class="k-nearest-neigbors">
         <h1 class="display-6">K-Nearest-Neighbors</h1>
+        <img src="../images/age_histogram.png" alt="Age Distribution"<br>
         <p>
-          Here is where we put all the information about K-Nearest Neighbors stuff.
+          <br> The age distribution rougly mirrors a bell curve with a normal distribution and normal tails.
+        </p>
+          <br>
+        <img src="../images/knn.png" alt="K = 11"
+        <p>
+          <br><br> The optimal K value seems to be 11, with a 98% accuracy rate. <br><br>
         </p>
       </div>
     </div>
@@ -79,8 +85,10 @@
     <div class="container">
       <div class="random-forest-classifier">
         <h1 class="display-6">Random Forest Classifier</h1>
+        <img src="../images/random_forest.png" alt="RFF Classifier"<br>
         <p>
-          Here is where we put all the information about Random Forest Classifier stuff.
+          The training & test scores are comparable; 91%/90% respectively. Interestingly, the most dominant feature is "wheezing & coughing."
+          <br>This was surprising since smoking and coughing of blood seemed much more likely.<br><br>
         </p>
       </div>
     </div>
@@ -89,16 +97,13 @@
       <div class="neural-network">
         <h1 class="display-6">Neural Network</h1>
         <p>
-          To prepare our data for our Neural Network, we used pandas to drop our "index" and
-          "Patient Id" column from our dataset since they don't contribute in predicting lung
-          cancer risk and they would only be noise in our model. We then changed "Low", "Medium",
-          and "High" values in our target "Level" column to 0, 1, and 2 respectively so that our
-          model could understand these values. After that we split our data and target, create
-          dummies for our target, and then use scikit-learn to scale our data.
+          To prepare our data for our Neural Network, we used Pandas to drop "index" and
+          "Patient Id." In one scenario, we then combined "Low" & "Medium" for the ROC curve. 
+          In another scenario we retained the same three values for the ROC-AUC analysis.
         </p>
         <p>
-          After the preprocessing is done, we move on to create or Neural Network using TensorFlow
-          Keras. In the following order, our Neural Network consists of an input layer, an 8 node
+          After the preprocessing is done, we move on to create or Neural Network using Keras from TensorFlow.
+          In the following order, our Neural Network consists of an input layer, an 8 node
           hidden layer with a ReLU activation function, a 16 node hidden layer with a ReLU
           activation function, a dropout layer with a rate of 0.1, another 8 node hidden layer
           with a ReLU activation function, and a 3 node output layer with a softmax activation
