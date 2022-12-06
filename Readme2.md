@@ -51,7 +51,7 @@ ____________________________________________________
  2. The Support Vector Machine (SVM)
     - ### From sklearn import svm and fit the data to the model then import classification_report and print the report to show the optimal value. Firstly, preprocess the data by dropping the 3 columns then proceed with the SVM steps.
     - ### Create dataframes for the different levels, *High, Medium, Low* and plot it in a scatter plot graph.
-    - ### Split the data to train and test sets and fit the sets to the standardscaler. Import SVM classifier to predict the test set and print the report showing all the average reports.
+    - ### Plot data to count for one of the features, *Wheezing*
 
  3. The Random Forest
    - ### This classification is used to calculate the most important features in *cancer patient data sets.csv*. 
@@ -60,23 +60,24 @@ ____________________________________________________
        3. fit the logistic regression to the original dataset, and then print its score. Compare the two scores of the models.
  
  4. The ROC (Receiver Operating Characteristics) Curves
-   - ### This classifier is used by combining the two features of *Low and Medium* into one and label it to 0 to a get a binary classification data in order to compute and plot the ROC Curve (AUC) for the KNN model.
+   - ### Use this classifier to combine *Low and Medium* in one and label to a binary value then compute and plot the ROC Curve (AUC) for AUC measures.
  
  
- ## Part 4: Clustering for Unsupervised Machine Learning
-  - ### 
+ ## Part 4: Unsupervised Machine Learning
+  - ### Clustering Data - Import sklearn.cluster, then drop the three columns, *High, Medium, Low* then normalize the data. Plot the data in two of the features, *Coughing of Blood, and Shortness of Breath, Wheezing and Alcohol use* in a scatterplot.
 
+  - ### Neural Network is used:
 
-## HTML to GitHub
- 1. Host on GitHub: "LInk paste here"
+## Part 5: HTML Webpage
+ 1. Host on GitHub
 
  2. HTML Files
-        a. Home Page (/templates/index.html)
-        b. Methodology page (/templates/methodology.html)
-        c. Analysis page (/templates/analysis.html)  
-        d. Conclusion page (/templates/conclusion.html)
+        1. Home Page (/templates/index.html)
+        2. Methodology page (/templates/methodology.html)
+        3. Analysis page (/templates/analysis.html)  
+        4. Conclusion page (/templates/conclusion.html)
 
  3.  CSS Files (Cascading Style Sheets)
-        a. /static/css/style.css
+        1. /static/css/style.css
 
 
