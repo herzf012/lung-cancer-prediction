@@ -40,22 +40,13 @@
         <div class="container">
             <div class="jumbotron">
                 <h1 class="display-4">Analysis</h1>
-                <p class="lead">K-Nearest Neighbors, Support Vector Machine, Random Forest Classifier, and Neural Network.</p>
+                <p class="lead">Macine Learning Scenarios</p>
             </div>
         </div>
   
         <div class="container">
-            <div class="about">
-                <h1 class="display-6">About</h1>
-                <p>
-                This is the about paragraph.
-                </p>
-            </div>
-        </div>
-      
-        <div class="container">
-            <div class="k-nearest-neigbors">
-                <h1 class="display-6">K-Nearest-Neighbors</h1>
+            <div class="ML">
+                <br>
                 <p>
                 We used KNN Classification to create the ROC Curve of the train and test models. The image to the left is the plot of the KNN models having two features; the low and the high. The second image is a plot of the AUC ROC Curve, and it is plotted with TPR (y-axis) against the FPR (x-axis). An AUC shown in this plot is running at a constant rate of 1.0 (TPR), which means it is an excellent model.
                 </p>
@@ -63,34 +54,39 @@
                 <img src="../images/roc-curve-2features-mai.png"/>
                 <img src="../images/roc-curve-image-mai.png"/>
                 </p>
-            </div>
-        </div>
-      
-        <div class="container">
-            <div class="suppor-vector-machine">
-                <h1 class="display-6">Support Vector Machine</h1>
+                <br>
+                <h1 class="display-6">Supervised Learning - Scenario 1</h1>
+                <img src="../images/correlation_plot.png" alt="Correlation Matrix"<br>
+                <img src="../images/boxplot.png" alt="Feature Boxplot"
                 <p>
-                Here is where we put all the information about Support Vector Machine stuff.
-                </p>
-            </div>
-        </div>
-      
-        <div class="container">
-            <div class="random-forest-classifier">
-                <h1 class="display-6">Random Forest Classifier</h1>
-                <p>
-                Here is where we put all the information about Random Forest Classifier stuff.
+                As one reviews the various correlations, any pair of features that exceed 0.90 indicate a strong correlation. 
+                Additionally, one can review the boxplots of the features and see similar results.
+                Genetic risk and chronic lung disase are strong inicators. Whereas snoring and gender are not.<br><br>
                 </p>
             </div>
         </div>
       
         <div class="container">
             <div class="neural-network">
-                <h1 class="display-6">Neural Network</h1>
-                <p>
-                Here is where we put all the information about Neural Network stuff.
+                <h1 class="display-6">Supervised Learning - Scenario 2</h1><br>
+                <img src="../images/training_vs_validation.png" <br>
+                <img src="../images/accuracy.png"<br><br>
+                <br><p>
+                In both scenarios, we used the relu/relu/softmax activation methods. While both NN generated similar results, 
+                scenario 1 achieved the desired accuracy level using only 10 epochs. 
                 </p>
             </div>
+            <div class="container">
+                <div class="unsupervised-learning">
+                    <h1 class="display-6">Unsupervised Learning</h1><br>
+                    <img src="../images/dendogram.png"<br>
+                    <img src="../images/two_feature_scatterplot.png" alt="Coughing of Blood/Shortness of Breath"
+
+                    <br><p>
+                    In both scenarios, we used the relu/relu/softmax activation methods. While both NN generated similar results, 
+                    scenario 1 achieved the desired accuracy level using only 10 epochs. 
+                    </p>
+                </div>
         </div>
     </div>
 
