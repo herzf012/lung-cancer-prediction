@@ -40,18 +40,31 @@
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-4">Methodology</h1>
-          <p class="lead">K-Nearest Neighbors, Support Vector Machine, Random Forest Classifier, and Neural Network.</p>
+          <p class="lead">
+            The objective of our project was to evaluate whether or not certain symptoms were better predictors
+            of lunch cancer than others. In order to accomplish this, we employed the following algorithms 
+            for supervised learning:<br><br>
+
+              K-Nearest Neighbors<br>
+              Support Vector Machine<br>
+              Random Forest Classifier<br><br>
+            
+            Subsequently, we created two neural network models to test the data. Finally, 
+            while not a part of our objective, we created an unsupervised learning model; namely, agglomerative
+            clustering.<br><br>
+          
+          </p>
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="about">
         <h1 class="display-6">About</h1>
         <p>
           This is the about paragraph.
         </p>
       </div>
-    </div>
+    </div> -->
 
     <div class="container">
       <div class="k-nearest-neigbors">
@@ -63,7 +76,7 @@
           <br>
         <img src="../images/knn.png" alt="K = 11"
         <p>
-          <br><br> The optimal K value seems to be 11, with a 98% accuracy rate. <br><br>
+          <br><br> The optimal K value seems to be 9, with a 98% accuracy rate. <br><br>
         </p>
       </div>
     </div>
@@ -72,12 +85,12 @@
       <div class="suppor-vector-machine">
         <h1 class="display-6">Support Vector Machine</h1>
         <p>
-          SVM is being used in this instance to find if there are any correlations within specific set of categories.
-          The data was gathered over the course of an average of 7 years, in a study provided by Journal of Nature Medicine.
+          SVM is being used in this instance to find if there are any correlations within specific set of features.
+          The data was gathered over the course of an average of 7 years, in a study provided by Journal of Nature Medicine.<br><br>
 
           To prepare the data set for predictions Patient ID and Index were dropped as they are not useful within the data.
           The specific categories chosen were "Wheezing" and "Coughing of Blood", these were chosen due to the number of patients with these symptoms.
-          Once prepared the data was then put on a plot and using sklearn trained and scaled for predicting.
+          Once prepared the data was then put on a plot and using sklearn trained and scaled for predicting.<br><br>
         </p>
       </div>
     </div>
@@ -102,14 +115,16 @@
           In another scenario we retained the same three values for the ROC-AUC analysis.
         </p>
         <p>
-          After the preprocessing is done, we move on to create or Neural Network using Keras from TensorFlow.
-          In the following order, our Neural Network consists of an input layer, an 8 node
+          After the preprocessing was done, we moved on to create or Neural Network using Keras.
+          In the following order, our Neural Network consisted of an input layer, an 8 node
           hidden layer with a ReLU activation function, a 16 node hidden layer with a ReLU
           activation function, a dropout layer with a rate of 0.1, another 8 node hidden layer
           with a ReLU activation function, and a 3 node output layer with a softmax activation
-          function. When we compiled our model, we chose our optimizer to be adam, loss to be
+          function. <br><br>
+          
+          When we compiled our model, we chose our optimizer to be adam, loss to be
           categorical crossentropy, and metrics to be accuracy. To fit our model we chose 40
-          epochs and a validation split of 0.3.
+          epochs and a validation split of 0.3.<br><br>
         </p>
       </div>
     </div>
